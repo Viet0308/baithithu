@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt("số phần từ trong mảng");
+    function insertNumberToArray(x, index){
+        let arr = [];
+        for ( let i=0; i<n; i++){
+            arr[i]= +prompt("nhap so");
+            if (index===i){
+                arr[i] =x;
+            }
+        }
+        return arr;
+    }
+    let vitri=+prompt("vi tri muon thay");
+    let songuyenthaythe=+prompt("so nguyen thay the");
+    let ketqua = insertNumberToArray(songuyenthaythe, vitri);
+    document.write(ketqua);
+</script>
+</body>
+</html>

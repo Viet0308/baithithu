@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x=prompt("nhap vao so x");
+    function sumOfListPrime()
+    {
+        let n;
+        let i;
+        let tong = 0;
+        for (n = 2; n < x; n++) {
+            let kiemtra = true;
+            for (i = 2; i <= (n - 1); i++) {
+                if (n % i === 0) {
+                    kiemtra = false;
+                    break;
+                }
+            }
+            if (kiemtra === true) {
+                tong = tong + n;
+            }
+        }
+        document.write("tong cac so nguyen to toi x la "+ tong);
+    }
+    sumOfListPrime(x);
+
+</script>
+</body>
+</html>
